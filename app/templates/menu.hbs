@@ -2,13 +2,7 @@ Who's hungry?
 
 <ul class="items-container">
   {{#each model as |item|}}
-    <li class="menu-item">
-      <h4>{{item.name}}</h4>
-      <img src="/img/{{item.image}}" alt="{{item.name}}">
-      <p>
-        {{ link-to 'Details' 'item' item.id}}
-      </p>
-    </li>
+    {{menu-item food=item}}
   {{/each}}
 </ul>
 
