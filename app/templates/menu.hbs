@@ -6,7 +6,7 @@ Who's hungry?
       <h4>{{item.name}}</h4>
       <img src="/img/{{item.image}}" alt="{{item.name}}">
       <p>
-        <a href="/item/{{item.id}}">Details</a>
+        {{ link-to 'Details' 'item' item.id}}
       </p>
     </li>
   {{/each}}
