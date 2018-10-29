@@ -2,5 +2,5 @@ import Component from '@ember/component';
 import { inject } from '@ember/service';
 
 export default Component.extend({
-  orderManager: inject.service('order-manager')
+  orderManager: inject('order-manager')
 });
