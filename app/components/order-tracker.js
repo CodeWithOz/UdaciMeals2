@@ -7,6 +7,10 @@ export default Component.extend({
   actions: {
     remove(day, mealCategory) {
       this.get('orderManager').removeMenuOption(day, mealCategory);
+    },
+
+    setDayTo(day) {
+      this.get('orderManager').setSelectedDayTo(day);
     }
   }
 });
