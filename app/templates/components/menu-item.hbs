@@ -2,7 +2,7 @@
 <img src="/img/{{food.image}}" alt="{{food.name}}">
 
 <div>
-  <select>
+  <select onchange={{action 'changeCategory' value="target.value"}}>
     <option value="breakfast">Breakfast</option>
     <option value="lunch">Lunch</option>
     <option value="dinner">Dinner</option>
